@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let data = DataStore()
-        data.AddUserforData(username: "testoo", userid: 3)
+        //let data = DataStore()
+        //data.AddUserforData(username: "testoo", userid: 3)
+        DataStore.shared.AddUserforData(username: "testoo", userid: 3)
     }
 
     override func didReceiveMemoryWarning() {
