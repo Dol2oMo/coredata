@@ -17,6 +17,7 @@ class DataStore: NSObject {
     var ManagedObjectModel = NSManagedObjectModel()
     
 
+    public static let shared:DataStore = {return DataStore()}()
 
     
     func ManagedObjectContext() -> NSManagedObjectContext{
